@@ -46,7 +46,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(90deg, #0A257D, #061649);
+    background: linear-gradient(145deg, #0A257D, #061649);
     background-attachment: fixed;
 }
 
@@ -179,12 +179,12 @@ a {
     transition: all .1s ease-in-out;
 }
 
-a:visited,
+/*a:visited,
 a:active,
 a:hover,
 a:focus {
     color: #8EC7FF;
-}
+}*/
 
 /*------------------------------------*\
   #OBJECTS
@@ -415,6 +415,7 @@ a:focus {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    align-items: center;
 }
 
 .c-nav__item {
@@ -422,16 +423,37 @@ a:focus {
 
 }
 
-.c-nav__item--link {
+.c-item--link {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.c-nav__item--link:hover {
+.c-item--link:hover {
     text-shadow: #8EC7FF 1px 0 5px;
     color: #DBEDFF;
+}
+ 
+.c-button {
+    Display: inline-block;
+    Line-height: 24px;
+    Padding: 19px 31px;
+    border: 2px solid rgba(142, 199, 255, 20%);
+    box-shadow: 1px 1px 5px 2px rgba(17, 149, 255, 30%);
+    Background: linear-gradient(90deg, #033AA7, #0053FB);
+}
+
+.c-figcaption {
+    background-color: #fff;
+    border-right: 5px solid #0053FB;
+    color: #474D59;
+    padding: 16px 16px;
+    width: 260px;
+    position: absolute;
+    top: 50px;
+    right: 110px;
+    
 }
 /*------------------------------------*\
   #UTILITIES

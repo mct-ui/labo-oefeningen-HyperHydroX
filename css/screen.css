@@ -402,6 +402,37 @@ a:focus {
     height: 32px;
 }
 
+.c-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-nav {
+}
+
+.c-nav__list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.c-nav__item {
+    padding: 16px;
+
+}
+
+.c-nav__item--link {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.c-nav__item--link:hover {
+    text-shadow: #8EC7FF 1px 0 5px;
+    color: #DBEDFF;
+}
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
@@ -413,6 +444,7 @@ a:focus {
 */
 
 .u-color-secondary-base {
+    color: #000;
 }
 
 /*
